@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="bancodedados.php" class="formulario">
+        <h2>FICHA DO ALUNO</h2>
+        <h3>DADOS PESSOAIS</h3>
+        <div class="container_dados">
+            <div class="dados" id="nome">
+                <div class="label"><label for="iname">Nome:</label></div>
+                <input type="text" name="name" id="iname" size="62px">
+            </div>
+            <div class="dados" id="endereco">
+                <div class="label"><label for="iendereco">Endereço:</label></div>
+                <input type="text" name="endereco" id="iendereco">
+            </div>
+            <div class="dados" id="numero">
+                <div class="label" style="justify-content: center;"><label for="inumero">Número:</label></div>
+                <input type="number" name="numero" id="inumero">
+            </div>
+            <div class="dados" id="bairro">
+                <div class="label"><label for="ibairro">Bairro:</label></div>
+                <input type="text" name="bairro" id="ibairro">
+            </div>
+            <div class="dados" id="uf">
+                <div class="label" style="justify-content: center;"><label for="iuf">UF:</label></div>
+                <input type="text" name="uf" id="iuf">
+            </div>
+            <div class="dados" id="cidade">
+                <div class="label"><label for="icidade">Cidade:</label></div>
+                <input type="text" name="cidade" id="icidade">
+            </div>
+            <div class="dados" id="telefone">
+                <div class="label" style="justify-content: center;"><label for="itelefone">Telefone:</label></div>
+                <input type="number" name="telefone" id="itelefone">
+            </div>
+            <div class="dados" id="cpf">
+                <div class="label"><label for="icpf">CPF:</label></div>
+                <input type="number" name="cpf" id="icpf">
+            </div>
+            <div class="dados" id="rg">
+                <div class="label" style="justify-content: center;"><label for="irg">RG:</label></div>
+                <input type="number" name="rg" id="irg">
+            </div>
+            <div class="dados" id="email">
+                <div class="label"><label for="iemail">E-Mail:</label></div>
+                <input type="text" name="email" id="iemail">
+            </div>
+        </div>
+        <h2>DADOS DA MATRÍCULA</h2>
+        <H3>CURSOS</H3>
+        <div class="botoes" id="cursos">
+            <div id="basico">
+                <input type="checkbox" name="basico" id="ibasico">
+                <span><label for="ibasico">Básico</label></span>
+            </div>
+            <div id="avancado">
+                <input type="checkbox" name="avancado" id="iavancado">
+                <span><label for="iavancado">Avançado</label></span>
+            </div>
+            <div id="manutencao">
+                <input type="checkbox" name="manutencao" id="imanutencao">
+                <span><label for="imanutencao">Manutenção</label></span>
+            </div>
+        </div>
+        <h3>DIAS DA SEMANA</h3>
+        <div class="botoes" id="dias">
+            <div class="seg">
+                <input type="checkbox" name="seg" id="iseg">
+                <span><label for="iseg">Segunda-Feira</label></span>
+            </div>
+            <div class="ter">
+                <input type="checkbox" name="ter" id="iter">
+                <span><label for="iter">Terça-Feira</label></span>
+            </div>
+            <div class="qua">
+                <input type="checkbox" name="qua" id="iqua">
+                <span><label for="iqua">Quarta-Feira</label></span>
+            </div>
+            <div class="qui">
+                <input type="checkbox" name="qui" id="iqui">
+                <span><label for="iqui">Quinta-Feira</label></span>
+            </div>
+            <div class="sex">
+                <input type="checkbox" name="sex" id="isex">
+                <span><label for="isex">Sexta-Feira</label></span>
+            </div>
+            <div class="sab">
+                <input type="checkbox" name="sab" id="isab">
+                <span><label for="isab">Sabádo</label></span>
+            </div>
+        </div>
+        <h2>HORÁRIOS</h2>
+        <div class="botoes" id="horas">
+            <div class="">
+                <input type="checkbox" name="primeiro" id="iprimeiro">
+                <span><label for="iprimeiro">08:00 as 09:00</label></span>
+            </div>
+            <div>
+                <input type="checkbox" name="segundo" id="isegundo">
+                <span><label for="isegundo">09:00 as 10:00</label></span>
+            </div>
+            <div>
+                <input type="checkbox" name="terceiro" id="iterceiro">
+                <span><label for="iterceiro">14:00 as 15:00</label></span>
+            </div>
+            <div>
+                <input type="checkbox" name="quarto" id="iquarto">
+                <span><label for="iquarto">15:00 as 16:00</label></span>
+            </div>
+            <div>
+                <input type="checkbox" name="quinto" id="iquinto">
+                <span><label for="iquinto">17:00 as 18:00</label></span>
+            </div>
+            <div>
+                <input type="checkbox" name="sexto" id="isexto">
+                <span><label for="isexto">18:00 as 19:00</label></span>
+            </div>
+        </div>
+        <h2>INICIO DO CURSO</h2>
+        <div class="caixas" id="inicio">
+            <div class="dia">
+                <span><label for="idia">Dia</label></span>
+                <input type="number" name="dia" id="idia">
+            </div>
+            <div class="mes">
+                <span><label for="imes">Mês</label></span>
+                <input type="number" name="mes" id="imes">
+            </div>
+            <div class="ano">
+                <span><label for="iano">Ano</label></span>
+                <input type="number" name="ano" id="iano">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
